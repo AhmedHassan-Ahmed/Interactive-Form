@@ -20,14 +20,14 @@ namei.onkeyup = function () {
 
 const gmail = document.querySelector("#email");
 const gmailv = document.querySelector(".gmail");
-const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
 const validpassword =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s])[A-Za-z\d\W]{8,}$/;
 const password = document.querySelector("#password");
 const passwordMessage = document.querySelector(".password");
 
 gmail.onkeyup = function () {
-  if (regex.test(gmail.value)) {
+  if (regex.test(gmail.value.trim())) {
     gmailv.innerHTML = "valid Email address";
     gmailv.classList.add("nameg");
     gmailv.classList.remove("namec");
@@ -84,16 +84,16 @@ submit.addEventListener("click", function (event) {
     var name = namei.value;
     var gmail3 = gmail.value;
     const gmail2 = gmail3.replace(
-      /^([a-zA-Z0-9]{4})([a-zA-Z0-9]*)(@gmail\.com)$/i,
-      (match, keep, toHide, domain) => {
-        return keep + "*".repeat(toHide.length) + domain;
+      /^([a-zA-Z0-9]{2})([a-zA-Z0-9]*)(@gmail\.com)$/i,
+      (match, keep, Hide, domain) => {
+        return keep + "*".repeat(Hide.length) + domain;
       }
     );
     prevesection.style.transform = " translateX(-556px)";
     targetsection.style.transform = " translateX(0)";
 
-    hiName.innerHTML += name;
-    gmailsent.innerHTML += `We sent you a link via your email : ${gmail2} to confirm your account. You will then easily be able to access your account and any saved forms.`;
+    hiName.innerHTML += name.trim();
+    gmailsent.innerHTML += `We sent you a link via your email : ${gmail2.trim()} to confirm your account. You will then easily be able to access your account and any saved forms.`;
     console.log(name);
     hr.style.width = "360px";
     submit.style.display = "none";
