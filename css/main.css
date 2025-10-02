@@ -1,0 +1,203 @@
+body {
+  background-color: #f4f4f5;
+
+  overflow: hidden;
+}
+
+.circleP {
+  background-color: #b991ff;
+  width: 368px;
+  height: 368px;
+  margin: -120px -80px;
+  border-radius: 50%;
+  filter: blur(8px);
+}
+.circlep2 {
+  background-color: #b991ff;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 352px;
+  right: 69px;
+  border-radius: 50%;
+  filter: blur(8px);
+}
+.circleg {
+  background-color: #bdff85;
+  width: 368px;
+  position: absolute;
+  height: 368px;
+  bottom: -135px;
+  right: -43px;
+  border-radius: 50%;
+  filter: blur(8px);
+}
+.circleg2 {
+  background-color: #bdff85;
+  width: 100px;
+  position: absolute;
+  height: 100px;
+  margin: 251px 60px;
+  border-radius: 50%;
+  filter: blur(8px);
+}
+
+form {
+  width: 540px;
+  height: 655px;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+}
+
+.text {
+  text-align: center;
+  color: #d4d4d8;
+}
+h1 {
+  color: #27272a;
+  text-align: center;
+}
+
+.hr {
+  width: 110px;
+  height: 2px;
+  margin-top: 55px;
+  margin-left: 23px;
+
+  background-color: #b991ff;
+
+  transition: width 2s linear;
+}
+.one {
+  top: 144px;
+  left: 148px;
+}
+.colored {
+  transition: background-color 2s;
+
+  background-color: #b991ff;
+
+  color: white;
+}
+
+.notcolored {
+  background-color: #ffffff;
+  transition: background-color 2s;
+  border: 2px solid #d4d4d8;
+  color: #d4d4d8;
+}
+
+.one,
+.two {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.two {
+  top: 144px;
+  left: 370px;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+  transition: transform 3s;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform :  translateX(556px);
+  gap: 40px;
+  margin-top: 60px;
+  transition: transform 3s;
+  position: absolute;
+  bottom: 20%;
+  background-color: #e3e3e9;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 770px 21px 0;
+  transition: transform 3s;
+}
+.column div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.column1 div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  outline: 0;
+  border: 0;
+  background-color: #f4f4f5;
+  width: 480px;
+  height: 38px;
+  padding-left: 10px;
+}
+
+.password {
+  width: 460px;
+}
+
+button {
+  background-color: #b991ff;
+  color: white;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+  width: 90px;
+  height: 40px;
+  font-size: 20px;
+}
+button::placeholder {
+  color: black;
+}
+
+.namec {
+  color: red;
+}
+.nameg {
+  color: green;
+}
+
+.fa-circle-check {
+  display: none;
+  color: green;
+}
+
+.row {
+  flex-direction: row !important;
+}
+.row2 {
+  flex-direction: row !important;
+}
+.row3 {
+  flex-direction: row !important;
+}
+
+form {
+  overflow: hidden;
+}
+
+.correct {
+  display: block;
+  font-size: 70px;
+}
