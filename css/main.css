@@ -172,16 +172,16 @@ input {
   color: black;
 }
 
-.send{
-  margin:50px 0 0 100px ;
-    background-color: #b991ff;
-   outline: 0;
-     width: 150px;
-     display: none;
+.send {
+  margin: 50px 0 0 100px;
+  background-color: #b991ff;
+  outline: 0;
+  width: 150px;
+  display: none;
   height: 40px;
-   border-radius: 5px;
+  border-radius: 5px;
   border: 0;
-    color: white;
+  color: white;
 }
 
 .namec {
@@ -218,7 +218,7 @@ form {
 @media (max-width: 767.98px) {
   form {
     width: 320px;
-    height: 726px;
+    height: 756px;
     top: -95px;
   }
   input {
@@ -226,28 +226,29 @@ form {
   }
   .column1 {
     margin-top: 40px;
-   
   }
   .column {
-gap: 4px;   
-padding: 10px;
+    gap: 4px;
+    padding: 10px;
   }
   form {
-     padding: 10px;
-     
+    padding: 10px;
   }
   .column1 div {
     display: flex;
     flex-direction: column;
-  width: 290px;
+    width: 290px;
     gap: 10px;
   }
-      .one {
-        top: 153px;
-        left: 87px;
-    }
+  .one {
+    top: 153px;
+    left: 87px;
+  }
   .two {
     top: 153px;
     left: 231px;
-}
+  }
+  .hr {
+    width: 80px;
+  }
 }
