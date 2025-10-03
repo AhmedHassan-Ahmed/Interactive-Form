@@ -173,7 +173,7 @@ input {
 }
 
 .send {
-  margin: 50px 0 0 100px;
+  margin: auto;
   background-color: #b991ff;
   outline: 0;
   width: 150px;
@@ -218,7 +218,7 @@ form {
 @media (max-width: 767.98px) {
   form {
     width: 320px;
-    height: 756px;
+    height: 770px;
     top: -95px;
   }
   input {
@@ -251,4 +251,6 @@ form {
   .hr {
     width: 80px;
   }
+  .send {
+  margin: 80px auto;}
 }
