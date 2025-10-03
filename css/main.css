@@ -154,7 +154,7 @@ input {
   width: 460px;
 }
 
-button {
+.submit {
   background-color: #b991ff;
   color: white;
   border-radius: 5px;
@@ -167,8 +167,20 @@ button {
   height: 40px;
   font-size: 20px;
 }
-button::placeholder {
+.submit::placeholder {
   color: black;
+}
+
+.send{
+  margin:50px 0 0 100px ;
+    background-color: #b991ff;
+   outline: 0;
+     width: 150px;
+     display: none;
+  height: 40px;
+   border-radius: 5px;
+  border: 0;
+    color: white;
 }
 
 .namec {

@@ -68,6 +68,7 @@ const prevesection = document.querySelector(".column1");
 const targetsection = document.querySelector(".column");
 const hiName = document.querySelector(".column span");
 const gmailsent = document.querySelector(".column div");
+const refresh = document.querySelector(".send");
 
 submit.addEventListener("click", function (event) {
   if (
@@ -98,8 +99,13 @@ submit.addEventListener("click", function (event) {
     hr.style.width = "360px";
     submit.style.display = "none";
     targetedit.classList.remove("notcolored");
+    refresh.style.display = "block";
     targetedit.classList.add("colored");
     prevedit.classList.remove("colored");
     prevedit.classList.add("notcolored");
   }
+});
+
+refresh.addEventListener("click", function (event) {
+  location.reload();
 });
