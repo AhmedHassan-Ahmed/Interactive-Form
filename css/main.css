@@ -11,6 +11,7 @@ body {
   margin: -120px -80px;
   border-radius: 50%;
   filter: blur(8px);
+  position: absolute;
 }
 .circlep2 {
   background-color: #b991ff;
@@ -45,7 +46,9 @@ body {
 
 form {
   width: 540px;
-  height: 655px;
+  top: 55px;
+ 
+  height: 819px;
   background-color: #ffffff;
   margin: auto;
   border-radius: 10px;

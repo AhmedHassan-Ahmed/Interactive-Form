@@ -24,8 +24,22 @@ const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,}$/;
 const validpassword =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s])[A-Za-z\d\W]{8,}$/;
 const password = document.querySelector("#password");
+const phone = document.querySelector("#phone");
+const phonev = document.querySelector(".phonev");
 const passwordMessage = document.querySelector(".password");
 
+phone.onkeyup = function () {
+  if (phone.value.length > 6) {
+    phonev.innerHTML = "available";
+
+    phonev.classList.add("nameg");
+    phonev.classList.remove("namec");
+  } else {
+    phonev.innerHTML = "Not available";
+    phonev.classList.add("namec");
+    phonev.classList.remove("nameg");
+  }
+};
 gmail.onkeyup = function () {
   if (regex.test(gmail.value.trim())) {
     gmailv.innerHTML = "valid Email address";
