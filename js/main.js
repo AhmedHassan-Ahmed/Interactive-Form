@@ -5,7 +5,7 @@ let counter = 0;
 const ok2 = document.querySelector(".row2 .fa-circle-check");
 const ok3 = document.querySelector(".row3 .fa-circle-check");
 namei.onkeyup = function () {
-  if (namei.value.length > 6) {
+  if (namei.value.length > 10) {
     namev.innerHTML = "available";
     ok.style.display = "block";
     namev.classList.add("nameg");
@@ -88,10 +88,10 @@ submit.addEventListener("click", function (event) {
   if (
     namev.innerHTML.includes("available") &&
     gmailv.innerHTML.includes("valid Email address") &&
-    passwordMessage.innerHTML.includes("correct")
+    passwordMessage.innerHTML.includes("correct") && (namei.value.length > 10) 
   )
-    counter = 3;
-  if (counter != 3) {
+    counter = 4;
+  if (counter != 4) {
     event.preventDefault();
     alert("Enter a valid information");
   } else {
