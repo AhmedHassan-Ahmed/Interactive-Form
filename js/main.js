@@ -91,6 +91,8 @@ submit.addEventListener("click", function (event) {
       }
     );
     prevesection.style.transform = " translateX(-556px)";
+
+    targetsection.style.display = " flex";
     targetsection.style.transform = " translateX(0)";
 
     hiName.innerHTML += name.trim();

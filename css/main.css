@@ -35,6 +35,7 @@ body {
 .circleg2 {
   background-color: #bdff85;
   width: 100px;
+  display: none;
   position: absolute;
   height: 100px;
   margin: 251px 60px;
@@ -216,19 +217,37 @@ form {
 
 @media (max-width: 767.98px) {
   form {
-    width: 400px;
-    height: 655px;
+    width: 320px;
+    height: 726px;
+    top: -95px;
   }
   input {
-    width: 381px;
+    width: 281px;
   }
   .column1 {
     margin-top: 40px;
+   
+  }
+  .column {
+gap: 4px;   
+padding: 10px;
+  }
+  form {
+     padding: 10px;
+     
   }
   .column1 div {
     display: flex;
     flex-direction: column;
-  width: 403px;
+  width: 290px;
     gap: 10px;
   }
+      .one {
+        top: 153px;
+        left: 87px;
+    }
+  .two {
+    top: 153px;
+    left: 231px;
+}
 }
