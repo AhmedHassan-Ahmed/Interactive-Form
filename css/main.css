@@ -48,6 +48,7 @@ form {
   height: 655px;
   background-color: #ffffff;
   margin: auto;
+  border-radius: 10px;
   padding: 20px;
   position: relative;
 }
