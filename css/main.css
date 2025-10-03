@@ -48,7 +48,7 @@ form {
   width: 540px;
   top: 55px;
  
-  height: 1049px;
+  height: 849px;
   background-color: #ffffff;
   margin: auto;
   border-radius: 10px;
@@ -222,7 +222,7 @@ form {
 @media (max-width: 767.98px) {
   form {
     width: 320px;
-    height: 770px;
+    height: 870px;
     top: -95px;
   }
   input {
