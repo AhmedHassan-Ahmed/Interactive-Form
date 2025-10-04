@@ -1,7 +1,10 @@
 body {
   background-color: #f4f4f5;
-
+}
+.all {
   overflow: hidden;
+height: 1000px;
+position: relative;
 }
 
 .circleP {
@@ -243,7 +246,7 @@ form {
   form {
     width: 320px;
     height: 820px;
-    top: 0px;
+    top: 10px;
   }
   input {
     width: 281px;
