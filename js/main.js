@@ -27,9 +27,9 @@ const password = document.querySelector("#password");
 const phone = document.querySelector("#phone");
 const phonev = document.querySelector(".phonev");
 const passwordMessage = document.querySelector(".password");
-
+const phoneRegex = /^\+?[0-9\s\-\(\)\.]{9,15}$/;
 phone.onkeyup = function () {
-  if (phone.value.length > 6) {
+  if (phoneRegex.test(phone.value)) {
     phonev.innerHTML = "available";
 
     phonev.classList.add("nameg");
@@ -88,7 +88,8 @@ submit.addEventListener("click", function (event) {
   if (
     namev.innerHTML.includes("available") &&
     gmailv.innerHTML.includes("valid Email address") &&
-    passwordMessage.innerHTML.includes("correct") && (namei.value.length > 10) 
+    passwordMessage.innerHTML.includes("correct") &&
+    phoneRegex.test(phone.value)
   )
     counter = 4;
   if (counter != 4) {
